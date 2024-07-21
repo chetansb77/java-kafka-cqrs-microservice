@@ -20,7 +20,7 @@ services:
     environment:
       - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
       - ALLOW_PLAIN_TEXT_LISTENER=yes
-      - KAFKA_LISTERBERS=PLAINTEXT://:9092
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
       - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
     volumes:
       - ./kafka-data:/bitnami/kafka
